@@ -411,6 +411,7 @@ public class Opcodes {
 		opcodes.put(Opcode.INVOKESPECIAL, new MethodInvocationOpcode(Opcode.INVOKESPECIAL));
 		opcodes.put(Opcode.INVOKESTATIC, new MethodInvocationOpcode(Opcode.INVOKESTATIC));
 		opcodes.put(Opcode.INVOKEINTERFACE, new MethodInvocationOpcode(Opcode.INVOKEINTERFACE));
+		opcodes.put(Opcode.INVOKEDYNAMIC, new MethodInvocationOpcode(Opcode.INVOKEDYNAMIC));
 		opcodes.put(Opcode.NEW, new BasicOpcode(Opcode.NEW, U2).setPushes(ONE));
 		opcodes.put(Opcode.NEWARRAY, new ArrayCreationOpcode(Opcode.NEWARRAY, U1).setPops(ONE).setPushes(ONE)); // ARRAY
 		opcodes.put(Opcode.ANEWARRAY, new ArrayCreationOpcode(Opcode.ANEWARRAY, U2).setPops(ONE).setPushes(ONE)); // ARRAY
